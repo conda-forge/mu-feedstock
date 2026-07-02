@@ -1,6 +1,6 @@
 context:
   name: mu
-  version: "1.12.15"
+  version: "1.14.2"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/djcb/mu/releases/download/v${{ version }}/mu-${{ version }}.tar.xz
-  sha256: 49d75622acff9d8a552622eba29d8abe49ae26d7fe80d835898f75f43e673ee3
+  sha256: db0732a7bd037d8726ec0c848aa3fe5736c810c90c96d70b597645f1821d9a0d
 
 build:
   skip: win
@@ -42,7 +42,7 @@ requirements:
   ignore_run_exports:
     by_name:
       - libzlib
-    
+
 tests:
   - script: "mu --version"
   - script: "emacs --batch --eval '(require (quote mu4e))'"
@@ -53,7 +53,7 @@ tests:
 about:
   homepage: https://github.com/djcb/mu
   summary: 'maildir indexer/searcher + emacs mail client + guile bindings '
-  license:  GPL-3.0-or-later
+  license: GPL-3.0-or-later
   license_file: COPYING
   documentation: http://www.djcbsoftware.nl/code/mu
   repository: https://github.com/djcb/mu
