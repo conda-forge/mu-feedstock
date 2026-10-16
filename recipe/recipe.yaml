@@ -1,6 +1,6 @@
 context:
   name: mu
-  version: "1.14.3"
+  version: "1.14.4"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/djcb/mu/releases/download/v${{ version }}/mu-${{ version }}.tar.xz
-  sha256: edea1a4e6be390a2bf5260e0156813f9b473c2d91da934b219dbb38229b0930a
+  sha256: 3714ea0d1e4811bd2c160cc2e222dc00723485df9756e2d90f2bb66e90f894f7
 
 build:
   skip: win
